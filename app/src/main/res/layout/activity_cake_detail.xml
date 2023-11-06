@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_cake_detail.xml -->
+<!-- res/layout/activity_cake_detail.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/cakeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cake" />
+
+    <TextView
+        android:id="@+id/cakeNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cake Name:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/cakeNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cake Name"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/cakePriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: (LKR)"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/cakePriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/cakeWeightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight: (kg)"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/cakeWeightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/cakeAvailableQuantityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Quantity:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/cakeAvailableQuantityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:inputType="number"
+            android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/updateCakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Cake"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/deleteCakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Cake"
+        android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

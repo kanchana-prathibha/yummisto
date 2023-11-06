@@ -1,0 +1,39 @@
+<!-- res/layout/item_cake.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cakeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cake" />
+
+    <TextView
+        android:id="@+id/cakeNameTextView"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Cake Name"
+        android:textColor="@color/headcolor"/>
+
+    <TextView
+        android:id="@+id/cakePriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:textColor="@color/headcolor"/>
+
+    <TextView
+        android:id="@+id/cakeWeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight: 0.0 kg"
+        android:textColor="@color/headcolor"/>
+
+
+</LinearLayout>

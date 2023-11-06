@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_order.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:background="@color/mainbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Selected Cake CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Selected Cake Image -->
+                <ImageView
+                    android:id="@+id/selectedCakeImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cake" />
+
+                <!-- Selected Cake Name -->
+                <TextView
+                    android:id="@+id/cakeNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Cake Name"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp" />
+
+                <!-- Selected Quantity -->
+                <TextView
+                    android:id="@+id/selectedQuantityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity: 0"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+                <!-- Selected Amount -->
+                <TextView
+                    android:id="@+id/cakePriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: LKR 0.00"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/cakeWeightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight: kg 0.00"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+
+
+                <!-- Add more TextViews to display selected cake details (price, weight, etc.) -->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Customer Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Details"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/textcolors"/>
+
+        <EditText
+            android:id="@+id/customerNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/textcolors"
+            android:textColorHint="@color/textcolors"/>
+
+        <EditText
+            android:id="@+id/customerAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/textcolors"
+            android:textColorHint="@color/textcolors" />
+
+        <EditText
+            android:id="@+id/customerContactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/textcolors"
+            android:textColorHint="@color/textcolors"/>
+
+
+        <TextView
+            android:id="@+id/finalAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Amount: LKR 0.00"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/headcolor"/>
+
+        <Button
+            android:id="@+id/submitOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Order"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/userbtn"/>
+    </LinearLayout>
+</ScrollView>

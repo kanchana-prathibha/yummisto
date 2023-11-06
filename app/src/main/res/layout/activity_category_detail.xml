@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CategoryDetailActivity">
+
+    <TextView
+        android:id="@+id/categoryNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category Name"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to update category -->
+    <Button
+        android:id="@+id/updateCategoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Category"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to delete category -->
+    <Button
+        android:id="@+id/deleteCategoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Category"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to add cake -->
+    <Button
+        android:id="@+id/addCakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Cake"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView to display cakes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCakes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

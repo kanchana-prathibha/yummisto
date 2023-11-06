@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97113583419",
+    "project_id": "yummisto-7d90e",
+    "storage_bucket": "yummisto-7d90e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97113583419:android:6193455dbc3dbd7582511e",
+        "android_client_info": {
+          "package_name": "com.coffeeprogrammer.yummisto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmmrujk8eAfwnrEUGYuGWU9OLsx2-dvhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

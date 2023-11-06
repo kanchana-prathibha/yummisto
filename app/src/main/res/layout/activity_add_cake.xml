@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddCakeActivity"
+    android:background="@color/mainbg">
+
+    <!-- Image View to display the selected cake image -->
+    <ImageView
+        android:id="@+id/cakeImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_image_placeholder"
+        android:contentDescription="Cake Image"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to select an image from the device -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/cakeNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cake Name"
+        android:inputType="text"
+        android:textColor="@color/textcolors"
+        android:textColorHint="@color/textcolors"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/cakePriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cake Price"
+        android:textColor="@color/textcolors"
+        android:textColorHint="@color/textcolors"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/cakeWeightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cake Weight (kg)"
+        android:textColor="@color/textcolors"
+        android:textColorHint="@color/textcolors"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/availableQuantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Available Quantity"
+        android:textColor="@color/textcolors"
+        android:textColorHint="@color/textcolors"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/saveCakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Cake"
+        android:backgroundTint="@color/userbtn"/>
+
+</LinearLayout>
